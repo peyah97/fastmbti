@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Xcode user data (shared xcschemes 仍要版控，不忽略 *.xcscheme)
+xcuserdata/
+*.xcuserdatad/
+*.xcuserstate
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+!default.pbxuser
+
+# SwiftPM / 建置產物
+.build/
+.swiftpm/
+DerivedData/
+build/
+*.ipa
+*.dSYM
+*.dSYM.zip

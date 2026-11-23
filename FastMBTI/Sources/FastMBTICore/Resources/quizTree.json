@@ -1,0 +1,355 @@
+{
+  "root": "root",
+  "nodes": [
+    {
+      "id": "root",
+      "questionKey": "tree.root.q",
+      "options": [
+        {
+          "labelKey": "tree.root.o1",
+          "next": "social"
+        },
+        {
+          "labelKey": "tree.root.o2",
+          "next": "rules"
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "questionKey": "tree.social.q",
+      "options": [
+        {
+          "labelKey": "tree.social.o1",
+          "next": "rational"
+        },
+        {
+          "labelKey": "tree.social.o2",
+          "next": "picky"
+        }
+      ]
+    },
+    {
+      "id": "rational",
+      "questionKey": "tree.rational.q",
+      "options": [
+        {
+          "labelKey": "tree.rational.o1",
+          "next": "emotional"
+        },
+        {
+          "labelKey": "tree.rational.o2",
+          "next": "emotional2"
+        }
+      ]
+    },
+    {
+      "id": "emotional",
+      "questionKey": "tree.emotional.q",
+      "options": [
+        {
+          "labelKey": "tree.emotional.o1",
+          "next": "INFJ"
+        },
+        {
+          "labelKey": "tree.emotional.o2",
+          "next": "cry"
+        }
+      ]
+    },
+    {
+      "id": "emotional2",
+      "questionKey": "tree.emotional2.q",
+      "options": [
+        {
+          "labelKey": "tree.emotional2.o1",
+          "next": "INFJ"
+        },
+        {
+          "labelKey": "tree.emotional2.o2",
+          "next": "sure"
+        }
+      ]
+    },
+    {
+      "id": "cry",
+      "questionKey": "tree.cry.q",
+      "options": [
+        {
+          "labelKey": "tree.cry.o1",
+          "next": "INFP"
+        }
+      ]
+    },
+    {
+      "id": "sure",
+      "questionKey": "tree.sure.q",
+      "options": [
+        {
+          "labelKey": "tree.sure.o1",
+          "next": "stone"
+        },
+        {
+          "labelKey": "tree.sure.o2",
+          "next": "machine"
+        }
+      ]
+    },
+    {
+      "id": "stone",
+      "questionKey": "tree.stone.q",
+      "options": [
+        {
+          "labelKey": "tree.stone.o1",
+          "next": "INTJ"
+        }
+      ]
+    },
+    {
+      "id": "machine",
+      "questionKey": "tree.machine.q",
+      "options": [
+        {
+          "labelKey": "tree.machine.o1",
+          "next": "ISTP"
+        },
+        {
+          "labelKey": "tree.machine.o2",
+          "next": "INTP"
+        }
+      ]
+    },
+    {
+      "id": "picky",
+      "questionKey": "tree.picky.q",
+      "options": [
+        {
+          "labelKey": "tree.picky.o1",
+          "next": "cry"
+        },
+        {
+          "labelKey": "tree.picky.o2",
+          "next": "money"
+        }
+      ]
+    },
+    {
+      "id": "money",
+      "questionKey": "tree.money.q",
+      "options": [
+        {
+          "labelKey": "tree.money.o1",
+          "next": "lazy"
+        }
+      ]
+    },
+    {
+      "id": "lazy",
+      "questionKey": "tree.lazy.q",
+      "options": [
+        {
+          "labelKey": "tree.lazy.o1",
+          "next": "horoscope"
+        },
+        {
+          "labelKey": "tree.lazy.o2",
+          "next": "ENTJ"
+        }
+      ]
+    },
+    {
+      "id": "horoscope",
+      "questionKey": "tree.horoscope.q",
+      "options": [
+        {
+          "labelKey": "tree.horoscope.o1",
+          "next": "ENFP"
+        },
+        {
+          "labelKey": "tree.horoscope.o2",
+          "next": "ENTP"
+        }
+      ]
+    },
+    {
+      "id": "rules",
+      "questionKey": "tree.rules.q",
+      "options": [
+        {
+          "labelKey": "tree.rules.o1",
+          "next": "extreme"
+        },
+        {
+          "labelKey": "tree.rules.o2",
+          "next": "impose"
+        },
+        {
+          "labelKey": "tree.rules.o3",
+          "next": "easygoing"
+        }
+      ]
+    },
+    {
+      "id": "extreme",
+      "questionKey": "tree.extreme.q",
+      "options": [
+        {
+          "labelKey": "tree.extreme.o1",
+          "next": "ESTP"
+        },
+        {
+          "labelKey": "tree.extreme.o2",
+          "next": "quiet"
+        }
+      ]
+    },
+    {
+      "id": "quiet",
+      "questionKey": "tree.quiet.q",
+      "options": [
+        {
+          "labelKey": "tree.quiet.o1",
+          "next": "ESFP"
+        },
+        {
+          "labelKey": "tree.quiet.o2",
+          "next": "ISFP"
+        }
+      ]
+    },
+    {
+      "id": "impose",
+      "questionKey": "tree.impose.q",
+      "options": [
+        {
+          "labelKey": "tree.impose.o1",
+          "next": "loud"
+        }
+      ]
+    },
+    {
+      "id": "loud",
+      "questionKey": "tree.loud.q",
+      "options": [
+        {
+          "labelKey": "tree.loud.o1",
+          "next": "ESTJ"
+        },
+        {
+          "labelKey": "tree.loud.o2",
+          "next": "ISTJ"
+        }
+      ]
+    },
+    {
+      "id": "easygoing",
+      "questionKey": "tree.easygoing.q",
+      "options": [
+        {
+          "labelKey": "tree.easygoing.o1",
+          "next": "ISFJ"
+        },
+        {
+          "labelKey": "tree.easygoing.o2",
+          "next": "school"
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "questionKey": "tree.school.q",
+      "options": [
+        {
+          "labelKey": "tree.school.o1",
+          "next": "ENFJ"
+        },
+        {
+          "labelKey": "tree.school.o2",
+          "next": "ESFJ"
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "id": "INTJ",
+      "titleKey": "type.INTJ.title",
+      "textKey": "type.INTJ.text"
+    },
+    {
+      "id": "ISTP",
+      "titleKey": "type.ISTP.title",
+      "textKey": "type.ISTP.text"
+    },
+    {
+      "id": "INTP",
+      "titleKey": "type.INTP.title",
+      "textKey": "type.INTP.text"
+    },
+    {
+      "id": "INFJ",
+      "titleKey": "type.INFJ.title",
+      "textKey": "type.INFJ.text"
+    },
+    {
+      "id": "INFP",
+      "titleKey": "type.INFP.title",
+      "textKey": "type.INFP.text"
+    },
+    {
+      "id": "ENTP",
+      "titleKey": "type.ENTP.title",
+      "textKey": "type.ENTP.text"
+    },
+    {
+      "id": "ENFP",
+      "titleKey": "type.ENFP.title",
+      "textKey": "type.ENFP.text"
+    },
+    {
+      "id": "ENTJ",
+      "titleKey": "type.ENTJ.title",
+      "textKey": "type.ENTJ.text"
+    },
+    {
+      "id": "ESTP",
+      "titleKey": "type.ESTP.title",
+      "textKey": "type.ESTP.text"
+    },
+    {
+      "id": "ESFP",
+      "titleKey": "type.ESFP.title",
+      "textKey": "type.ESFP.text"
+    },
+    {
+      "id": "ISFP",
+      "titleKey": "type.ISFP.title",
+      "textKey": "type.ISFP.text"
+    },
+    {
+      "id": "ESTJ",
+      "titleKey": "type.ESTJ.title",
+      "textKey": "type.ESTJ.text"
+    },
+    {
+      "id": "ISTJ",
+      "titleKey": "type.ISTJ.title",
+      "textKey": "type.ISTJ.text"
+    },
+    {
+      "id": "ENFJ",
+      "titleKey": "type.ENFJ.title",
+      "textKey": "type.ENFJ.text"
+    },
+    {
+      "id": "ESFJ",
+      "titleKey": "type.ESFJ.title",
+      "textKey": "type.ESFJ.text"
+    },
+    {
+      "id": "ISFJ",
+      "titleKey": "type.ISFJ.title",
+      "textKey": "type.ISFJ.text"
+    }
+  ]
+}
