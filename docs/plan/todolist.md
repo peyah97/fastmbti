@@ -141,7 +141,8 @@
 
 - [x] 前置：`git init`（`c5482ce`）、App Group `group.app.fastmbti.ios`、widget bundle id `app.fastmbti.ios.widget`（Developer Portal 已註冊）
 - [x] 骨架：extension target（2026-11-23，`FastMBTIWidget`，含 Embed Foundation Extensions）、App Group capability（主 App 與 widget 都有 entitlements）、版本號一致（1.0 / 1）；`xcodebuild` Debug 模擬器 build 通過
-- [ ] 實機：主畫面與鎖屏都加得到寫死句子（§3 step 5）
+- [x] 實機（2026-11-23／24）：Ahpey（iPhone 15 Pro, iOS 27.2.1）註冊到 Developer、開 Developer Mode、`devicectl` 裝機；主畫面與鎖屏都加得到 widget，顯示 `today's meme`／寫死句子／INTJ／日期，無裁切（§3 step 5）
+- [ ] 實機後續：換型後 widget 是否即時更新、飛航模式、低耗電（widget.md §9 測試矩陣）
 - [ ] 資料：`FastMBTICore`、句子庫 resources、type 寫入 App Group、固定索引
 - [ ] 畫面：`small`、`rectangular`、深色、Clear／Tinted
 - [ ] 換句：90 天 entries、60 天重交、偽時間與跨時區測試
