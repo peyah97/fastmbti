@@ -11,8 +11,9 @@
 - [x] 權限確認為 `Admin`（個人為 `Account Holder`）
 - [x] W-8BEN + 銀行帳戶（Agreements, Tax, and Banking；皆 `Active`）
 - [ ] 申請 SBP（Small Business Program）
-- [ ] AdMob 帳號 + 付款資料 + 稅表
-- [ ] 地址 PIN 驗證先寄（郵寄 4–6 週）
+- [x] AdMob 帳號 + 付款 profile（`nobaggage2rome@gmail.com`、`pub-9603007011739375`、`AdSense (Malaysia)`）
+- [ ] AdMob 稅表 `W-8BEN` + 收款銀行
+- [x] 地址 PIN：改為收入達驗證門檻才觸發，現階段不需寄
 - [ ] 網域 `fastmbti.nobaggage2rome.com` + 靜態落地頁
 - [ ] `app-ads.txt` 放網域根目錄，瀏覽器實測可抓
 - [ ] 隱私政策頁 + 服務條款頁（2 語，含廣告與娛樂免責、AI 生成）
@@ -24,7 +25,7 @@
 - [x] 簽名 + 產出 `Apple Distribution`（Release 用 `fastmbti_AppStore` profile 手動簽；Xcode 已自動產出 `Apple Development`；Archive 成功）
 - [ ] Connect 建 App：`fast mbti`、English (U.S.)、SKU `fastmbti-001`、Lifestyle/Entertainment、`13+`、不開中國區（App 記錄已建，分類／分級待補）
 - [x] 抄 10 位 `Apple ID`（`6838271103`）
-- [ ] AdMob：App ID + Rewarded `fastmbti_Card_Generate` + Banner `fastmbti_Banner`
+- [x] AdMob：App ID `ca-app-pub-9603007011739375~7813231080` + Rewarded `fastmbti_Card_Generate`（`/4323423117`）+ Banner `fastmbti_Banner`（`/9237993394`）
 - [ ] IAP `com.fastmbti.remove_ads`（Non-Consumable、$2.99）
 - [ ] `Facebook App ID`（IG 限動分享強制；Meta 2023 起要求）
 - [x] `Pass Type ID` `pass.fastmbti.result` + certificate + 私鑰（憑證已入 login Keychain；私鑰／`.p12` 在 `~/.keys/fastmbti-pass/`，密碼在 Keychain item `fastmbti-pass-p12`）

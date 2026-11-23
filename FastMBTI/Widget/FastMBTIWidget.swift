@@ -27,6 +27,9 @@ struct FastMBTIWidgetView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
+            Text("today's meme")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
             Text(entry.text)
                 .font(.system(size: 14, weight: .semibold))
                 .minimumScaleFactor(0.8)
@@ -42,7 +45,6 @@ struct FastMBTIWidgetView: View {
     }
 }
 
-@main
 struct FastMBTIWidget: Widget {
     let kind: String = "FastMBTIWidget"
 
@@ -53,5 +55,12 @@ struct FastMBTIWidget: Widget {
         .configurationDisplayName("today's meme")
         .description("每天一句，陪你認識自己的型。")
         .supportedFamilies([.systemSmall, .accessoryRectangular])
+    }
+}
+
+@main
+struct FastMBTIWidgetBundle: WidgetBundle {
+    var body: some Widget {
+        FastMBTIWidget()
     }
 }

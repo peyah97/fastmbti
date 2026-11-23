@@ -64,9 +64,11 @@
 
 ## 5. 拿 AdMob ID + 1 Rewarded + 1 Banner Unit
 
-1. 開 `https://apps.admob.com` → 用與 `Developer Website` 同持有人身份註冊（含稅表 `W-8BEN` + 收款銀行，`$100` 門檻、`PIN` 郵寄 4–6 週先觸發）。
-2. `Apps` → `Add App` → `iOS` → `Yes, it is listed on an app store` → 搜 `fast mbti` 綁定（搜不到先選 `No` 建好再綁）。
-3. 建好進 `App settings` 抄 `App ID`：`ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY`。
+> 2026-11-23 實作結果：AdMob 綁 Google 帳號 `nobaggage2rome@gmail.com`，**付款國家 `Malaysia`（不可改）**，payee `NOBAGGAGE ENTERPRISE`，publisher `pub-9603007011739375`。`peyng97@gmail.com` 曾誤建一個空帳號，已關閉。
+
+1. 開 `https://apps.admob.com` → 用 `nobaggage2rome@gmail.com` 註冊（含稅表 `W-8BEN` + 收款銀行，`$100` 門檻；PIN 改為收入達門檻才觸發）。
+2. `Apps` → `Add App` → `iOS` → **`No, the app is not listed on a supported app store`**（上架前）→ `App name` = `fast mbti`；上架後回來 `Link to app store`。
+3. 建好進 `App settings` 抄 `App ID`：`ca-app-pub-9603007011739375~7813231080`。
 4. `Ad units` → `+` 建兩個 Ad Unit：
    - `Rewarded`：`fastmbti_Card_Generate`（結果頁看一次生成一張卡）
    - `Banner`：`fastmbti_Banner`（測驗中 + 結果頁底部共用）
@@ -99,9 +101,12 @@
 - `Team ID` / `App ID Prefix` = `AMX7659GJJ`（個人帳號 `Account Holder`）
 - 簽名：Release 用 `fastmbti_AppStore` provisioning profile + `Apple Distribution` 手動簽（Xcode 已另產 `Apple Development`）；Archive 成功於 `FastMBTI/build/FastMBTI.xcarchive`
 - `Apple ID (數字)` = `6838271103`
-- `AdMob App ID (ca-app-pub-~)` = 
-- `Rewarded Unit (Card_Generate)` = 
-- `Banner Unit (shared)` = 
+- AdMob 帳號 = `nobaggage2rome@gmail.com`；publisher = `pub-9603007011739375`；payee = `NOBAGGAGE ENTERPRISE`；付款國家 = `Malaysia`（不可改）
+- `AdMob App ID (ca-app-pub-~)` = `ca-app-pub-9603007011739375~7813231080`（App 名 `fastmbti`，iOS，未綁商店，狀態 `Requires review`）
+- `Rewarded Unit (Card_Generate)` = `ca-app-pub-9603007011739375/4323423117`（reward `1 Card`）
+- `Banner Unit (shared)` = `ca-app-pub-9603007011739375/9237993394`
+- `app-ads.txt` 內容 = `google.com, pub-9603007011739375, DIRECT, f08c47fec0942fa0`
+- AdMob 稅表 = `W-8BEN`（個人／sole proprietor，2026-11-24 已提交）；收款銀行待加，帳戶名須為 `NOBAGGAGE ENTERPRISE`
 - `IAP` = `com.fastmbti.remove_ads`（價格見 `spec.md` §2）
 - `Facebook App ID` = 待填（IG 限動分享強制；見 §0 第 6 項）
 - 網域 = `https://fastmbti.nobaggage2rome.com`；`Privacy` = `/privacy`，`Support` = `/support`，`app-ads.txt` 放子域根（`Developer Website` 填同子域）
