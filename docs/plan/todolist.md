@@ -7,13 +7,12 @@
 ## 1 帳號與法務（W0）
 
 - [x] 商標風險已告知：採用 `fast mbti`（含 `MBTI`），不找律師、風險自負
-- [ ] Apple Developer Program（個人 $99／公司要 D-U-N-S）
-- [ ] 權限確認為 `Admin`
-- [ ] W-8BEN + 銀行帳戶（Agreements, Tax, and Banking）
+- [x] Apple Developer Program（個人 $99／公司要 D-U-N-S；已啟用）
+- [x] 權限確認為 `Admin`（個人為 `Account Holder`）
+- [x] W-8BEN + 銀行帳戶（Agreements, Tax, and Banking；皆 `Active`）
 - [ ] 申請 SBP（Small Business Program）
 - [ ] AdMob 帳號 + 付款資料 + 稅表
 - [ ] 地址 PIN 驗證先寄（郵寄 4–6 週）
-- [ ] 商標檢索：USPTO TESS + 台灣 TIPO
 - [ ] 網域 `fastmbti.nobaggage2rome.com` + 靜態落地頁
 - [ ] `app-ads.txt` 放網域根目錄，瀏覽器實測可抓
 - [ ] 隱私政策頁 + 服務條款頁（2 語，含廣告與娛樂免責、AI 生成）
@@ -21,14 +20,14 @@
 
 ## 2 ID 與憑證（W0）
 
-- [ ] App ID `app.fastmbti.ios`，Capabilities 全不勾
-- [ ] 自動簽名 + 產出 `Apple Distribution`
-- [ ] Connect 建 App：`fast mbti`、English (U.S.)、SKU `fastmbti-001`、Lifestyle/Entertainment、`13+`、不開中國區
-- [ ] 抄 10 位 `Apple ID`
+- [x] App ID `app.fastmbti.ios`，只勾 App Groups（`group.app.fastmbti.ios`）與 Pass Type IDs（`pass.fastmbti.result`）
+- [x] 簽名 + 產出 `Apple Distribution`（Release 用 `fastmbti_AppStore` profile 手動簽；Xcode 已自動產出 `Apple Development`；Archive 成功）
+- [ ] Connect 建 App：`fast mbti`、English (U.S.)、SKU `fastmbti-001`、Lifestyle/Entertainment、`13+`、不開中國區（App 記錄已建，分類／分級待補）
+- [x] 抄 10 位 `Apple ID`（`6838271103`）
 - [ ] AdMob：App ID + Rewarded `fastmbti_Card_Generate` + Banner `fastmbti_Banner`
 - [ ] IAP `com.fastmbti.remove_ads`（Non-Consumable、$2.99）
 - [ ] `Facebook App ID`（IG 限動分享強制；Meta 2023 起要求）
-- [ ] `Pass Type ID` `pass.fastmbti.result` + certificate + 私鑰
+- [x] `Pass Type ID` `pass.fastmbti.result` + certificate + 私鑰（憑證已入 login Keychain；私鑰／`.p12` 在 `~/.keys/fastmbti-pass/`，密碼在 Keychain item `fastmbti-pass-p12`）
 - [ ] 全部回填 `ids.md` §7 對帳表
 
 ## 3 i18n 與 catalog（W1）

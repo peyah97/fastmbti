@@ -26,7 +26,7 @@
 2. 左側 `Certificates, Identifiers & Profiles` → `Identifiers` → `+`。
 3. 選 `App IDs` → `App` → `Continue`。
 4. `Description` = `fast mbti`，`Bundle ID` 選 `Explicit` 貼上一步 `BundleID`。
-5. `Capabilities` 全不勾（不用 `Push` / `iCloud` / `App Groups` / `Sign in with Apple` / `Associated Domains`）。
+5. `Capabilities` 只勾 **App Groups**（`group.app.fastmbti.ios`，widget 與主 App 共用，見 `widget.md` §2）與 **Pass Type IDs**（`pass.fastmbti.result`，Wallet 用，見 `add-to-wallet.md` §4）；其餘 `Push` / `iCloud` / `Sign in with Apple` / `Associated Domains` 不勾。免費帳號無法用 App Groups，需已繳費的 Developer Program。
 6. `Continue` → `Register`。
 7. 抄下：`App ID Prefix (Team ID)` + `BundleID`。
 
@@ -92,8 +92,11 @@
 ## 7. 收尾對帳（一行過）
 
 - `BundleID` = `app.fastmbti.ios`
-- `Team ID` / `App ID Prefix` = 待填（`Admin` 已確認，`Automatic` 簽名）
-- `Apple ID (數字)` = 
+- `App Group` = `group.app.fastmbti.ios`（已註冊並指派給 App ID）
+- `Pass Type ID` = `pass.fastmbti.result`；Pass certificate `fast mbti Pass`（到期 2027-12-23）已匯入 login Keychain；私鑰／`.p12` 在 `~/.keys/fastmbti-pass/`（不進 repo），`.p12` 密碼存 Keychain item `fastmbti-pass-p12`
+- `Team ID` / `App ID Prefix` = `AMX7659GJJ`（個人帳號 `Account Holder`）
+- 簽名：Release 用 `fastmbti_AppStore` provisioning profile + `Apple Distribution` 手動簽（Xcode 已另產 `Apple Development`）；Archive 成功於 `FastMBTI/build/FastMBTI.xcarchive`
+- `Apple ID (數字)` = `6838271103`
 - `AdMob App ID (ca-app-pub-~)` = 
 - `Rewarded Unit (Card_Generate)` = 
 - `Banner Unit (shared)` = 
