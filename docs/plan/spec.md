@@ -261,7 +261,6 @@ Catalyst 版若要過編譯，必須 `#if !targetEnvironment(macCatalyst)` 包�
 
 1. Apple Developer Program：個人 $99/年（立即）或公司要 D-U-N-S（多 1–2 週）；權限要 `Admin`（`Member` 建不了 Identifier）。
 2. SBP（Small Business Program）上線前送出，手續費 15% 而非 30%。
-3. 商標檢索：USPTO TESS + 台灣 TIPO，查 `fast mbti` 近似名。
-4. 網域 + 靜態落地頁（只放說明與隱私/支援，不加分析，否則推翻「不收集」）+ `app-ads.txt`。
-5. 隱私政策頁 + 服務條款頁（2 語；含廣告、娛樂免責、AI 生成說明）。
-6. `EU DSA` 宣告 trader / non-trader。
+3. 網域 + 靜態落地頁（只放說明與隱私/支援，不加分析，否則推翻「不收集」）+ `app-ads.txt`。
+4. 隱私政策頁 + 服務條款頁（2 語；含廣告、娛樂免責、AI 生成說明）。
+5. `EU DSA` 宣告 trader / non-trader。
