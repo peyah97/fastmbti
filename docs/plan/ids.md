@@ -92,7 +92,9 @@
 ## 7. 收尾對帳（一行過）
 
 - `BundleID` = `app.fastmbti.ios`
-- `App Group` = `group.app.fastmbti.ios`（已註冊並指派給 App ID）
+- `widget BundleID` = `app.fastmbti.ios.widget`（已註冊，App Groups ✓；IAP 為 Apple 強制鎖定、widget 不呼叫 StoreKit）
+- `App Group` = `group.app.fastmbti.ios`（已註冊並指派給 App ID 與 widget App ID）
+- 主 App ID capabilities：App Groups ✓、In-App Purchase ✓、Wallet ✓（2026-11-23 於 Developer Portal 補勾）
 - `Pass Type ID` = `pass.fastmbti.result`；Pass certificate `fast mbti Pass`（到期 2027-12-23）已匯入 login Keychain；私鑰／`.p12` 在 `~/.keys/fastmbti-pass/`（不進 repo），`.p12` 密碼存 Keychain item `fastmbti-pass-p12`
 - `Team ID` / `App ID Prefix` = `AMX7659GJJ`（個人帳號 `Account Holder`）
 - 簽名：Release 用 `fastmbti_AppStore` provisioning profile + `Apple Distribution` 手動簽（Xcode 已另產 `Apple Development`）；Archive 成功於 `FastMBTI/build/FastMBTI.xcarchive`
